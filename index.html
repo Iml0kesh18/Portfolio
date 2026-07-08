@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio of Lokesh Patil, a Full Stack Developer building practical web and backend projects." />
+    <title>Lokesh Patil | Full Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Josefin+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="page-bg"></div>
+    <div id="particle-bg"></div>
+    <div id="cursor"></div>
+    <div id="cursor-glow"></div>
+
+    <header class="topbar">
+        <div class="container header-inner">
+            <a href="#home" class="brand">Lokesh<span>Patil</span></a>
+            <nav class="navbar" id="navbar">
+                <a class="nav-link active" href="#home">Home</a>
+                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link" href="#skills">Skills</a>
+                <a class="nav-link" href="#education">Education</a>
+                <a class="nav-link" href="#certifications">Certifications</a>
+                <a class="nav-link" href="#contact">Contact</a>
+                <span class="nav-underline"></span>
+            </nav>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="section hero" id="home">
+            <div class="container hero-grid">
+                <div class="hero-left reveal">
+                    <div class="profile-card glass-card">
+                        <div class="profile-glow"></div>
+                        <img src="lokesh.jpeg" alt="Lokesh Patil" class="profile-image" />
+                        <div class="profile-ring"></div>
+                    </div>
+                </div>
+                <div class="hero-right reveal">
+                    <p class="eyebrow">Hello, I'm</p>
+                    <h1>Lokesh Patil</h1>
+                    <p class="hero-role">Full Stack Developer</p>
+                    <p class="hero-description josefin-text">
+                        I enjoy building useful web applications and learning the parts of development that make a product feel polished, reliable, and easy to use.
+                    </p>
+                    <div class="typing-banner">
+                        <span class="typing-text" id="typingText"></span>
+                    </div>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary">Contact Me</a>
+                        <a href="Lokesh_Patil_9322970317.pdf" target="_blank" rel="noreferrer" class="btn btn-secondary">Download Resume</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub">GitHub</a>
+                        <a href="https://linkedin.com/" target="_blank" rel="noreferrer"
+                            aria-label="LinkedIn">LinkedIn</a>
+                        <a href="mailto:lokesh@example.com" aria-label="Email">Email</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section about" id="about">
+            <div class="container section-header reveal">
+                <span class="section-tag">About Me</span>
+                <h2>About Me</h2>
+                <p class="josefin-text">I’m a Computer Engineering graduate with a practical interest in creating web applications that are clean, responsive, and built for real users. I work with Java, Spring Boot, React, and MySQL to turn ideas into working products.</p>
+            </div>
+            <div class="container about-grid">
+                <div class="about-cards reveal">
+                    <article class="info-card glass-card">
+                        <h3>Academic Projects</h3>
+                        <p>Hands-on coursework and personal web applications built with Java, Spring Boot, React, and
+                            MySQL.</p>
+                    </article>
+                    <article class="info-card glass-card">
+                        <h3>Projects</h3>
+                        <p>4 completed projects are showcased here, covering web development and full stack implementation.
+                        </p>
+                    </article>
+                    <article class="info-card glass-card">
+                        <h3>Technologies</h3>
+                        <p>Java, Spring Boot, React, MySQL, HTML, CSS, JavaScript, Git and modern web tooling.</p>
+                    </article>
+                </div>
+                <div class="stats-grid reveal">
+                    <article class="stat-card glass-card">
+                        <h4>4</h4>
+                        <p>Projects</p>
+                    </article>
+                    <article class="stat-card glass-card">
+                        <h4>2026</h4>
+                        <p>Graduate</p>
+                    </article>
+                    <article class="stat-card glass-card">
+                        <h4>Full Stack</h4>
+                        <p>Developer</p>
+                    </article>
+                    <article class="stat-card glass-card">
+                        <h4>Problem</h4>
+                        <p>Solver</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section projects" id="projects">
+            <div class="container section-header reveal">
+                <span class="section-tag">Projects</span>
+                
+                <p>High-quality project showcases built with strong architecture and modern UI design.</p>
+            </div>
+            <div class="container projects-controls reveal">
+                <div class="search-box">
+                    <input type="text" id="projectSearch" placeholder="Search projects..." />
+                </div>
+                <div class="filter-buttons" id="projectFilters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                    <button class="filter-btn" data-filter="java">Java</button>
+                    <button class="filter-btn" data-filter="react">React</button>
+                </div>
+            </div>
+            <div class="container project-grid" id="projectGrid">
+                <article class="project-card glass-card reveal" data-category="web">
+                    <div class="project-image project-artexhibit"></div>
+                    <div class="project-content">
+                        <h3>Art Exhibition Platform</h3>
+                        <p>A web-based exhibition platform for displaying artists, events, and gallery content in a simple and engaging way.</p>
+                        <div class="project-tags">
+                            <span>HTML5</span><span>CSS3</span><span>JavaScript ES6+</span><span>Python</span><span>Django</span><span>MySQL</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn btn-tertiary">GitHub</a>
+                            <a href="https://artexhibition.onrender.com" target="_blank" rel="noreferrer" class="btn btn-outline">Live Demo</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card glass-card reveal" data-category="java">
+                    <div class="project-image project-java project-student"></div>
+                    <div class="project-content">
+                        <h3>Student Management System</h3>
+                        <p>A Java-based system for managing student records, academic activity, and basic institutional workflows.</p>
+                        <div class="project-tags">
+                            <span>Java</span><span>MySQL</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn btn-tertiary">GitHub</a>
+                            <a href="#" class="btn btn-outline">Live Demo</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card glass-card reveal" data-category="web">
+                    <div class="project-image project-portfolio"></div>
+                    <div class="project-content">
+                        <h3>Portfolio Website</h3>
+                        <p>A personal portfolio site designed to present my work clearly, with a modern layout and a focus on smooth user experience.</p>
+                        <div class="project-tags">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn btn-tertiary">GitHub</a>
+                            <a href="#" class="btn btn-outline">Live Demo</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card glass-card reveal" data-category="react">
+                    <div class="project-image project-ecommerce"></div>
+                    <div class="project-content">
+                        <h3>E-Commerce Website</h3>
+                        <p>An online shopping experience built with React and a backend API flow designed to feel practical and responsive.</p>
+                        <div class="project-tags">
+                            <span>React</span><span>Spring Boot</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="btn btn-tertiary">GitHub</a>
+                            <a href="#" class="btn btn-outline">Live Demo</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section skills" id="skills">
+            <div class="container section-header reveal">
+                <span class="section-tag">Skills</span>
+                
+                <p>Modern skill categories with interactive progress indicators and smooth switch animations.</p>
+            </div>
+            <div class="container skills-panel reveal">
+                <div class="skills-tabs" id="skillsTabs">
+                    <button class="skill-tab active" data-tab="languages">Programming Languages</button>
+                    <button class="skill-tab" data-tab="frontend">Frontend Development</button>
+                    <button class="skill-tab" data-tab="backend">Backend Development</button>
+                    <button class="skill-tab" data-tab="tools">Tools</button>
+                </div>
+                <div class="skills-content">
+                    <div class="skills-panel-item active" data-panel="languages">
+                        <div class="skill-card glass-card">
+                            <div class="skill-circle" data-progress="90"><span>Java</span></div>
+                            <p>Strong command of Java with solid backend development skills.</p>
+                        </div>
+                        <div class="skill-card glass-card">
+                            <div class="skill-circle" data-progress="98"><span>JavaScript</span></div>
+                            <p>Client-side logic, DOM interaction, and interactive web experiences.</p>
+                        </div>
+                        <div class="skill-card glass-card">
+                            <div class="skill-circle" data-progress="100"><span>HTML5</span></div>
+                            <p>Semantic structure, accessibility, and standards-compliant markup.</p>
+                        </div>
+                        <div class="skill-card glass-card">
+                            <div class="skill-circle" data-progress="100"><span>CSS3</span></div>
+                            <p>Responsive design, flexbox, grid, and modern visual effects.</p>
+                        </div>
+                    </div>
+                    <div class="skills-panel-item" data-panel="frontend">
+                        <div class="skill-card glass-card">
+                            <div class="skill-circle" data-progress="100"><span>Bootstrap</span></div>
+                            <p>Responsive grid system and pre-built component library.</p>
+                        </div>
+                        <div class="skill-card glass-card">
+                            <div class="skill-circle" data-progress="100"><span>React</span></div>
+                            <p>Component-driven development and interactive user interfaces.</p>
+                        </div>
+                        <div class="skill-card glass-card">
+                            <div class="skill-circle" data-progress="100"><span>Angular</span></div>
+                            <p>Modern frontend framework development with TypeScript.</p>
+                        </div>
+                    </div>
+                    <div class="skills-panel-item" data-panel="backend">
+                        <div class="skill-card glass-card">
+                            <div class="skill-circle" data-progress="90"><span>Java</span></div>
+                            <p>Reliable backend logic and object-oriented application development.</p>
+                        </div>
+                        <div class="skill-card glass-card">
+                            <div class="skill-circle" data-progress="89"><span>Spring Boot</span></div>
+                            <p>REST APIs and scalable backend services with Spring Boot.</p>
+                        </div>
+                        <div class="skill-card glass-card">
+                            <div class="skill-circle" data-progress="90"><span>MySQL</span></div>
+                            <p>Database design, queries, and relational data modeling.</p>
+                        </div>
+                    </div>
+                    <div class="skills-panel-item" data-panel="database">
+                    </div>
+                    <div class="skills-panel-item" data-panel="tools">
+                        <div class="skill-card glass-card">
+                            <div class="skill-circle" data-progress="92"><span>Git</span></div>
+                            <p>Version control, branching, and release workflows.</p>
+                        </div>
+                        <div class="skill-card glass-card">
+                            <div class="skill-circle" data-progress="90"><span>GitHub</span></div>
+                            <p>Repository management and developer collaboration.</p>
+                        </div>
+                        <div class="skill-card glass-card">
+                            <div class="skill-circle" data-progress="94"><span>VS Code</span></div>
+                            <p>Modern coding environment and productivity tooling.</p>
+                        </div>
+                        <div class="skill-card glass-card">
+                            <div class="skill-circle" data-progress="70"><span>AI Tools</span></div>
+                            <p>Experienced with ChatGPT, Claude AI, and Gemini prompts for development, debugging, and idea generation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section education" id="education">
+            <div class="container section-header reveal">
+                <span class="section-tag">Education</span>
+                <h2>Academic Journey</h2>
+                <p>A progressive timeline of learning and achievements through academic excellence.</p>
+            </div>
+            <div class="container timeline reveal">
+                <div class="timeline-item glass-card">
+                    <span class="timeline-year">10th</span>
+                    <h3>Secondary Education</h3>
+                    <p>10th Standard</p>
+                    <p>G S HighSchool Amalaner</p>
+                </div>
+                <div class="timeline-connector"></div>
+                <div class="timeline-item glass-card">
+                    <span class="timeline-year">12th</span>
+                    <h3>Higher Secondary Education</h3>
+                    <p>12th Standard</p>
+                    <p>Jay Yogeswar Science College </p>
+                </div>
+                <div class="timeline-connector"></div>
+                <div class="timeline-item glass-card">
+                    <span class="timeline-year">2026</span>
+                    <h3>Bachelor of Technology in Computer Engineering</h3>
+                    <p>Computer Engineering</p>
+                    <p>Graduation Year: 2026</p>
+                </div>
+                <div class="timeline-connector"></div>
+            </div>
+        </section>
+
+        <section class="section certifications" id="certifications">
+            <div class="container section-header reveal">
+                <span class="section-tag">Certifications</span>
+                <h2>Verified Credentials</h2>
+                <p>Professional certificates from trusted providers with hands-on learning practice.</p>
+            </div>
+            <div class="container certifications-grid reveal">
+                <article class="certificate-card glass-card">
+                    <div class="certificate-icon">IT</div>
+                    <h3>IT Vedant Java Full Stack Development Course Completion</h3>
+                    <p>Completed Java full stack development training.</p>
+                    <a href="#" class="btn btn-outline">View Certificate</a>
+                </article>
+                <article class="certificate-card glass-card">
+                    <div class="certificate-icon">JS</div>
+                    <h3>JavaScript Certification</h3>
+                    <p>HackerRank JavaScript certification.</p>
+                    <a href="javascript.pdf" target="_blank" rel="noreferrer" class="btn btn-outline">View Certificate</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="section contact" id="contact">
+            <div class="container section-header reveal">
+                <span class="section-tag">Contact</span>
+                <h2>Get In Touch</h2>
+                <p>Reach out for collaboration, internships, or project discussion.</p>
+            </div>
+            <div class="container contact-grid reveal">
+                <div class="contact-info glass-card">
+                    <h3>Contact Details</h3>
+                    <p>Email: <a href="mailto:lokeshpatil5527@gmail.com">lokeshpatil5527@gmail.com</a></p>
+                    <p>LinkedIn: <a href="https://www.linkedin.com/in/lokesh-patil-7a19532b5">linkedin.com/in/lokesh</a></p>
+                    <p>GitHub: <a href="https://github.com/Iml0kesh18">github.com/lokesh</a></p>
+                    <div class="contact-badge">Let’s build something strong and polished together.</div>
+                </div>
+                <form class="contact-form glass-card" id="contactForm" novalidate>
+                    <div class="field-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Lokesh Patil" required />
+                    </div>
+                    <div class="field-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="lokeshpatil5527@gmail.com" required />
+                    </div>
+                    <div class="field-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required />
+                    </div>
+                    <div class="field-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <p class="form-feedback" id="formFeedback"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <p>© 2026 Lokesh Patil</p>
+                <p> Full Stack Developer</p>
+            </div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#education">Education</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
